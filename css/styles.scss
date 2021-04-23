@@ -1,12 +1,16 @@
 body {
-	font-family: sans-serif;
+	font-family: 'Playfair Display', sans-serif;
 
 	img {
 		width: 100%;
 	}
 
 	.wrapper {
-  	margin: 15px;
+		margin: 15px;
+		display: flex;
+    x-justify-content: space-around;
+    x-align-items: stretch;
+    max-width: 1800px;
 	}
 
 	.row {
@@ -24,21 +28,35 @@ body {
 	}
 
 	.left-column {
-  	height: 200px;
+		width: 100%;
+		padding-top: 11.5em;
+		padding-left: 2.5em;
 	}
 
 	.right-column {
-  	height: 200px;
+		float: right;
+		width: 400px;
+    flex: 0 0 400px;
+    border-left: 1px;
+		padding-top: 4em;
 	}
 }
 
+h1 {
+	font-family: 'Playfair Display', sans-serif;
+	color: #000;
+	line-height: 43px;
+	font-weight: 400;
+}
 
 
+.hero-nav-text {
 
-
+}
 
 
 /* Font Styles */
+/*
 h1 {
   font-family: Futura, Trebuchet MS, Arial, sans-serif;
   color: #df678c;
@@ -47,7 +65,7 @@ h1 {
   font-variant: normal;
   font-weight: 400;
   line-height: 50px;
-  letter-spacing: 5px; }
+  letter-spacing: 5px; }*/
 
 h2 {
   font-family: Futura, Trebuchet MS, Arial, sans-serif;
@@ -58,6 +76,21 @@ h2 {
   font-weight: 400;
   line-height: 50px;
   letter-spacing: 5px; }
+
+h3 {
+	display: block;
+		flex-direction: column;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+		color: #000;
+		font-size: 12px;
+		text-align: right;
+		text-decoration: none;
+		text-transform: none;
+		line-height: 44px;
+	float: right;
+}
 
 p {
   font-family: Futura, Trebuchet MS, Arial, sans-serif;
@@ -71,35 +104,47 @@ p {
 
 /* default link styles, top nav and content */
 a {
-  text-decoration: none;
-  font-family: Futura, Trebuchet MS, Arial, sans-serif;
-  font-size: 24px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 400;
-  line-height: 3em;
-  letter-spacing: 2px;
+
+	flex-direction: column;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	color: #000;
+	font-size: 54px;
+	text-align: right;
+	text-decoration: none;
+	text-transform: none;
+	line-height: 60px;
+	font-weight: 700;
+	cursor: pointer;
+	float: right;
 }
+
 a:link {color: #12232E;}
 a:visited {color: #12232E;}
 a:hover {color: #f44336;}
 a:active {color: #f44336;}
 
-/* classed link styles, Splash Main nav */
-
-
-a.nav:link, a.nav:visited {
-  background-color: #3d155f;
-  color: white;
-  box-shadow: 0px 5px white;
-  padding: 14px 150px 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
-
+/* all other links on page PLUS top navigation */
 a.nav:hover, a.nav:active {
   background-color: #df678c;
   color: white;
   box-shadow: 5px 10px white;
+}
+
+/* Main menu */
+
+
+
+
+a.nav:link, a.nav:visited {
+  padding: 14px 25px 14px 25px;
+  text-decoration: none;
+
+}
+
+
+
+ul li {
+  list-style-type: none;
 }
